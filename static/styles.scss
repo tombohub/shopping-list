@@ -1,0 +1,15 @@
+// custom variables before import bootstrap so bootstrap can use these variables
+$form-check-input-width: 1.5em;
+
+@import './boostrap/scss/bootstrap.scss';
+
+// needs to be after import bootstrap because it overrides font size of bootstrap
+.btn-add-item {
+    padding: 0%;
+    width: 3rem;
+    height: 3rem;
+    font-size: xx-large;
+}
+
+
+

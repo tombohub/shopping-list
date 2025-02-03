@@ -1,0 +1,20 @@
+[project]
+name = "shopping-list"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "alembic>=1.14.1",
+    "flask-wtf>=1.2.2",
+    "flask>=3.1.0",
+    "psycopg2>=2.9.10",
+    "python-dotenv>=1.0.1",
+    "sqlalchemy>=2.0.37",
+]
+
+[dependency-groups]
+dev = ["debugpy>=1.8.12", "djlint>=1.36.4"]
+
+[tool.djlint]
+ignore = "H030,H031,T002"
